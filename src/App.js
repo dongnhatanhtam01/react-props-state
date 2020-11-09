@@ -11,6 +11,7 @@ import BaiTapTruyenFunction from "./components/Props/BaiTapTruyenFunction/BaiTap
 import DemoProps from "./components/Props/DemoProps";
 
 function App() {
+  document.title = 'tamdna'
   return (
     <div className="App">
       {/* <BaiTapComponent></BaiTapComponent> */}
