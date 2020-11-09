@@ -14,7 +14,7 @@ function App() {
   document.title = 'tamdna'
   return (
     <div className="App">
-      {/* <BaiTapComponent></BaiTapComponent> */}
+      <BaiTapComponent></BaiTapComponent>
       {/* <SinhVien></SinhVien> */}
       {/* <Event></Event> */}
       {/* <DemoIf></DemoIf> */}
@@ -23,7 +23,7 @@ function App() {
       {/* <DemoVongLap2></DemoVongLap2> */}
       {/* <BaiTapVongLap></BaiTapVongLap> */}
       {/* <DemoProps title={'tamdna-knock-door'}></DemoProps> */}
-      <BaiTapTruyenFunction></BaiTapTruyenFunction>
+      {/* <BaiTapTruyenFunction></BaiTapTruyenFunction> */}
     </div>
   );
 }

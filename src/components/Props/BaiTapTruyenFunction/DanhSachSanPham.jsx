@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import dataPhone from "../../../data/dataPhone.json";
+import SanPham from "./SanPham";
 
 export default class DanhSachSanPham extends Component {
   constructor(props) {
@@ -10,23 +11,15 @@ export default class DanhSachSanPham extends Component {
   }
   handelRenderDanhSachSanPham = () => {
     return dataPhone.map((dt, index) => {
-      return (
-        <div className="card col-4 text-left" key={index}>
-          <img className="card-img-top" src={dt.hinhAnh} alt={dt.maSP} />
-          <div className="card-body">
-            <h4 className="card-title">{dt.tenSP}</h4>
-            <p className="card-text">Body</p>
-            <button onClick={()=>this.xemChiTiet(dt)}>CLick</button>
-          </div>
-        </div>
-      );
+      return <SanPham key={index} dt={dt} xemChiTiet={this.xemChiTiet} />;
     });
   };
-  xemChiTiet(dt) {
+  xemChiTiet = (sanPham) => {
     this.setState({
-      sanPhamChiTiet: dt
-    })
-  }
+      sanPhamChiTiet:sanPham,
+    });
+  };
+
   render() {
     return (
       <div className="container">

@@ -6,7 +6,7 @@ export default class ProductList extends Component {
   }
   render() {
     // lấy giá trị mangSanPham tu cha truyen vao thông qua this.próps
-    let {mangSanPham} = this.props
+    let {mangSanPham, xemChiTiet} = this.props
     return (
       <div>
         <h3 className="text-">BEST PRODUCT</h3>
@@ -14,7 +14,7 @@ export default class ProductList extends Component {
           {mangSanPham.map(function(dt, index){
             return (
               <div className="col-3" key={index}>
-                <Product sanPhamCon={dt}></Product>
+                <Product sanPhamCon={dt} xemChiTiet={xemChiTiet}></Product>
               </div>
             )
           })}
