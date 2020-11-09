@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Hi mình là Tâm đây :art:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+đến giờ ngụ rùi... :sleeping:
 
 ## Available Scripts
 
